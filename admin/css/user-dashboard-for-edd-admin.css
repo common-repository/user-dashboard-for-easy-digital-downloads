@@ -1,0 +1,293 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .ud-for-edd-settings {
+ 	width: calc(100% - 20px);
+ 	color: #263238;
+ 	z-index: 999;
+
+ }
+
+ .ud-for-edd-settings h2,
+ .ud-for-edd-settings h3,
+ .ud-for-edd-settings h4 {
+ 	color: #263238;
+ 	font-weight: bold;
+ }
+
+ .ud-for-edd-settings-header {
+    background: white;
+    margin-top: 20px;
+}
+
+.ud-for-edd-settings-inner {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+}
+.ud-for-edd-settings-inner > * {
+	margin: 0 20px;
+}
+
+.ud-for-edd-settings-inner img {
+ 	width: 225px;
+    margin-left: 0;
+}
+
+.ud-for-edd-logo {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	font-weight: bold;
+	border-right: 2px solid #263238;
+    padding-right: 20px;
+	margin-left: 0;
+    margin-right: 0;
+	text-transform: uppercase;
+}
+
+.ud-for-edd-logo .dashicons.dashicons-layout {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    color: #3247dc;
+    margin-right: 10px;
+}
+
+.ud-for-edd-settings-inner:nth-child() {
+    margin-right: 0;
+}
+
+.ud-plugin-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+}
+
+.ud-plugin-version {
+    font-size: 14px;
+    font-weight: bold;
+    color: #263238;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.ud-plugin-version sup {
+	color: #1565c0;
+}
+
+.ud-for-edd-page-title {
+    text-transform: uppercase;
+}
+
+.ud-for-edd-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.ud-for-edd-left {
+    width: 70%;
+    background: white;
+    height: 100%;
+    z-index: 999;
+}
+
+.ud-for-edd-left-inner {
+    padding: 20px 40px;
+}
+
+.ud-input-details {
+	color: #888888;
+}
+
+.ud-for-edd-right {
+    width: 29%;
+    height: 100%;
+    z-index: 999;
+}
+
+.sidebar-item {
+    background: white;
+    margin-bottom: 30px;
+}
+
+.ud-sidebar-header {
+    background: black;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sidebar-item h3 {
+	color: white;
+	margin: 0;
+}
+
+.ud-sidebar-content {
+	padding: 15px;
+}
+
+.ud-sc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 10px;
+}
+
+.ud-sc span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ud-sc a.button {
+	width: 70%;
+    text-align: center;
+}
+
+.ud-side-content li:last-child {
+	border-bottom: 0;
+}
+
+.ud-for-edd-preview-logo {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f3f3f3;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.ud-for-edd-preview-logo span {
+	font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ud-for-edd-preview-logo img {
+	width: 290px;
+	height: 45px;
+}
+
+/*Coming soon*/
+
+.ud-for-edd-coming-soon {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ud-for-edd-coming-soon .dashicons-admin-appearance {
+	width: 90px;
+    height: 90px;
+    font-size: 90px;
+    background: #3247dc;
+    border-radius: 50%;
+    color: white;
+    padding: 20px;
+}
+
+.ud-for-edd-coming-soon p {
+    width: calc(100% - 150px);
+    font-size: 20px;
+    text-align: center;
+	text-transform: uppercase;
+}
+
+.ud-for-edd-tooltip {
+	content: 'Tip';
+	display: block;
+}
+
+.ud-for-edd-tooltip:hover .ud-for-edd-tooltip-text {
+	visibility: visible;
+}
+
+.ud-for-edd-tooltip-text {
+	visibility: hidden;
+}
+
+.ud-ajax-message {
+    padding: 10px;
+    margin-top: 10px;
+    background: #3247dc;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 960px) {
+	.ud-plugin-info {
+		display: none;
+	}
+
+	.ud-for-edd-main {
+		display: block;
+	}
+
+	.ud-for-edd-left {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.ud-for-edd-right {
+		width: 50%;
+		margin: auto;
+	}
+	.ud-for-edd-email .ud-for-edd-left {
+		height: auto;
+	}
+
+	.ud-for-edd-coming-soon {
+	    display: block;
+	    text-align: center;
+	}
+
+	.ud-for-edd-coming-soon p {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.ud-for-edd-right {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	.ud-for-edd-settings-inner {
+	    display: block;
+	    text-align: center;
+	    padding: 10px 20px;
+	}
+
+	.ud-for-edd-logo {
+	    display: block;
+	    border-right: 0;
+	    border-bottom: 1px solid black;
+	    padding-bottom: 10px;
+	    padding-right: 0;
+	    margin-bottom: 10px;
+	    text-align: center;
+	}
+
+	.ud-for-edd-right {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.ud-for-edd-settings,
+	.form-table,
+	tbody,
+	tr,
+	.ud-for-edd-preview-logo,
+	.ud-for-edd-preview-logo img {
+		display: block;
+		width: 100%;
+	}
+}

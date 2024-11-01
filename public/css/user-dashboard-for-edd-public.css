@@ -1,0 +1,707 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+html {
+    margin-top: 0 !important;
+}
+
+.ud-dashboard-body {
+	background: white;
+  padding-left: 300px;
+  font-family: 'Josefin Sans';
+  color: #14121F;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 2rem auto;
+}
+
+.ud-navbar-fixed {
+  position: relative;
+  overflow: hidden;
+}
+
+.ud-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: calc(100% - 300px);
+  z-index: 999;
+  background: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  align-items: center;
+  box-shadow: 1px 1px 20px 3px #1b161633;
+}
+
+.ud-nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.ud-nav-wrapper h3 {
+  display: inline-block;
+  margin: 0;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.ud-right {
+  display: inline-block;
+  margin: 0;
+}
+
+.ud-right li {
+  margin: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ud-right a {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.ud-right i {
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+.ud-sidenav-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #4a148c;
+  margin: 0;
+  width: 300px;
+  list-style: none;
+  transition: visibility 0.5s ease-out,opacity 0.5s ease-out;
+  z-index: 999;
+}
+
+.ud-sidenav-fixed img {
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 60px;
+}
+
+.ud-sidenav-fixed li {
+  margin: 0;
+  padding: 10px 15px;
+  padding-left: 0;
+  margin-right: 15px;
+}
+
+.ud-sidenav-fixed li a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.ud-sidenav-fixed .is-active-item {
+  background: white;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.ud-sidenav-fixed .is-active-item a {
+  color: #1512b7;
+}
+
+.ud-main {
+    display: block;
+    margin: 0 50px;
+    position: relative;
+    padding-top: 80px;
+}
+
+.key-ud-dashboard .ud-container .ud-main {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-open-icon {
+  display: none;
+}
+
+.menu-close-icon {
+  display: none;
+}
+
+.ud-logout-link {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  font-weight: bold;
+  width: 300px;
+  color: black;
+  padding: 20px;
+  background: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 999;
+}
+
+.ud-logout-link i {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 7px;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.ud-section h3 {
+    font-size: 2.5rem;
+}
+
+.user-welcome {
+  background: #4a148c;
+  color: white;
+  padding: 40px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.user-welcome h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+/* Login form Styling */
+
+.ud_for_edd-custom-login {
+    background-color: #e2e2e2;
+}
+
+.ud_for_edd-column {
+    max-width: 520px;
+    margin: 0;
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ud_for_edd-column .ud_for_edd-logo-img {
+    width: 320px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.ud_for_edd-custom-login-form {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.custom-login-form p,
+.custom-login-form a {
+    color: black;
+}
+
+.ud_for_edd-custom-login-form p label {
+    text-transform: uppercase;
+}
+
+.ud_for_edd-custom-login-form input[type="text"],
+.ud_for_edd-custom-login-form input[type="password"] {
+    border-radius: 5px;
+}
+
+.ud_for_edd-submit-custom-login,
+.ud_for_edd-submit-custom-register,
+input[type="submit"] {
+    background-color: #1512b7;
+    border-radius: 30px;
+    padding: 15px 40px;
+    text-decoration: none;
+}
+
+.ud_for_edd-custom-login-form p.ud_for_edd-submit-login {
+    text-align: center;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: none;
+}
+
+/*sidebar nav links*/
+
+.ud_for_edd-dashboard:before,
+.ud_for_edd-purchased-items:before,
+.ud_for_edd-download-history:before,
+.ud_for_edd-settings:before {
+    font-family: 'user-dashboard';
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.ud_for_edd-dashboard:before {
+  content: "\e90a";
+}
+
+.ud_for_edd-purchased-items:before {
+  content: "\e91f";
+}
+
+.ud_for_edd-download-history:before {
+  content: "\e90c";
+}
+
+.ud_for_edd-settings:before {
+  content: "\e929";
+}
+
+/*EDD*/
+
+fieldset {
+  border: 0;
+}
+
+legend {
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+select {
+  padding: 10px;
+  width: 100%;
+}
+
+#edd_profile_editor_form p {
+    width: 49%;
+    display: inline-block;
+}
+
+#edd_profile_editor_form label {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.edd_form input[type="text"],
+.edd_form input[type="password"],
+.edd_form input[type="email"] {
+    border-radius: 10px;
+    background: #ececec;
+    border: 0;
+}
+
+.edd-submit, [type=submit].edd-submit {
+  padding: 15px 20px;
+}
+
+
+/*Icons stylesheet*/
+@font-face {
+  font-family: 'user-dashboard';
+  src:  url('../icons/user-dashboard.eot?ia2dnb');
+  src:  url('../icons/user-dashboard.eot?ia2dnb#iefix') format('embedded-opentype'),
+    url('../icons/user-dashboard.ttf?ia2dnb') format('truetype'),
+    url('../icons/user-dashboard.woff?ia2dnb') format('woff'),
+    url('../icons/user-dashboard.svg?ia2dnb#user-dashboard') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'user-dashboard' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wg-advertising:before {
+  content: "\e932";
+}
+.wg-app:before {
+  content: "\e933";
+}
+.wg-edit:before {
+  content: "\e934";
+}
+.wg-event:before {
+  content: "\e935";
+}
+.wg-exit:before {
+  content: "\e936";
+}
+.wg-feed:before {
+  content: "\e937";
+}
+.wg-flag:before {
+  content: "\e938";
+}
+.wg-friend:before {
+  content: "\e939";
+}
+.wg-friends1:before {
+  content: "\e93a";
+}
+.wg-puzzle:before {
+  content: "\e93b";
+}
+.wg-group1:before {
+  content: "\e93c";
+}
+.wg-lifebuoy:before {
+  content: "\e93d";
+}
+.wg-question:before {
+  content: "\e93e";
+}
+.wg-conversation:before {
+  content: "\e93f";
+}
+.wg-key:before {
+  content: "\e940";
+}
+.wg-language:before {
+  content: "\e941";
+}
+.wg-location-pin:before {
+  content: "\e942";
+}
+.wg-padlock:before {
+  content: "\e943";
+}
+.wg-market:before {
+  content: "\e944";
+}
+.wg-message:before {
+  content: "\e945";
+}
+.wg-clock:before {
+  content: "\e946";
+}
+.wg-feed-1:before {
+  content: "\e947";
+}
+.wg-notification:before {
+  content: "\e948";
+}
+.wg-person:before {
+  content: "\e949";
+}
+.wg-photo:before {
+  content: "\e94a";
+}
+.wg-stars:before {
+  content: "\e94b";
+}
+.wg-report:before {
+  content: "\e94c";
+}
+.wg-manual:before {
+  content: "\e94d";
+}
+.wg-search1:before {
+  content: "\e94e";
+}
+.wg-setting:before {
+  content: "\e94f";
+}
+.wg-ball:before {
+  content: "\e950";
+}
+.wg-recommendation:before {
+  content: "\e951";
+}
+.wg-user25:before {
+  content: "\e952";
+}
+.wg-video-player:before {
+  content: "\e953";
+}
+.wg-weather:before {
+  content: "\e954";
+}
+.wg-suitcase:before {
+  content: "\e955";
+}
+.wg-user:before {
+  content: "\e900";
+}
+.wg-add-user:before {
+  content: "\e901";
+}
+.wg-add-group:before {
+  content: "\e902";
+}
+.wg-add-group1:before {
+  content: "\e903";
+}
+.wg-user1:before {
+  content: "\e904";
+}
+.wg-card:before {
+  content: "\e905";
+}
+.wg-talk:before {
+  content: "\e906";
+}
+.wg-personal-computer:before {
+  content: "\e907";
+}
+.wg-contacts:before {
+  content: "\e908";
+}
+.wg-team:before {
+  content: "\e909";
+}
+.wg-user2:before {
+  content: "\e90a";
+}
+.wg-group:before {
+  content: "\e90b";
+}
+.wg-user3:before {
+  content: "\e90c";
+}
+.wg-user4:before {
+  content: "\e90d";
+}
+.wg-user5:before {
+  content: "\e90e";
+}
+.wg-user6:before {
+  content: "\e90f";
+}
+.wg-personal-identification:before {
+  content: "\e910";
+}
+.wg-personal-file:before {
+  content: "\e911";
+}
+.wg-personal-data:before {
+  content: "\e912";
+}
+.wg-friends:before {
+  content: "\e913";
+}
+.wg-user7:before {
+  content: "\e914";
+}
+.wg-social-network:before {
+  content: "\e915";
+}
+.wg-user8:before {
+  content: "\e916";
+}
+.wg-user9:before {
+  content: "\e917";
+}
+.wg-user10:before {
+  content: "\e918";
+}
+.wg-user11:before {
+  content: "\e919";
+}
+.wg-user12:before {
+  content: "\e91a";
+}
+.wg-users:before {
+  content: "\e91b";
+}
+.wg-location:before {
+  content: "\e91c";
+}
+.wg-user13:before {
+  content: "\e91d";
+}
+.wg-love:before {
+  content: "\e91e";
+}
+.wg-money:before {
+  content: "\e91f";
+}
+.wg-users1:before {
+  content: "\e920";
+}
+.wg-organization:before {
+  content: "\e921";
+}
+.wg-user14:before {
+  content: "\e922";
+}
+.wg-user15:before {
+  content: "\e923";
+}
+.wg-user16:before {
+  content: "\e924";
+}
+.wg-user17:before {
+  content: "\e925";
+}
+.wg-search:before {
+  content: "\e926";
+}
+.wg-user18:before {
+  content: "\e927";
+}
+.wg-user19:before {
+  content: "\e928";
+}
+.wg-user20:before {
+  content: "\e929";
+}
+.wg-user21:before {
+  content: "\e92a";
+}
+.wg-send-mail:before {
+  content: "\e92b";
+}
+.wg-user22:before {
+  content: "\e92c";
+}
+.wg-target:before {
+  content: "\e92d";
+}
+.wg-thinking:before {
+  content: "\e92e";
+}
+.wg-users2:before {
+  content: "\e92f";
+}
+.wg-user23:before {
+  content: "\e930";
+}
+.wg-user24:before {
+  content: "\e931";
+}
+.wg-bullhorn:before {
+  content: "\e956";
+}
+.wg-list2:before {
+  content: "\e9bb";
+}
+.wg-attachment:before {
+  content: "\e9cd";
+}
+.wg-cross:before {
+  content: "\ea0f";
+}
+
+
+@media only screen and ( max-width: 1024px ) {
+
+  .ud-dashboard-body {
+    padding-left: 250px;
+  }
+
+  .ud-sidenav-fixed,
+  .ud-logout-link {
+    width: 250px;
+  }
+
+  .ud-navbar {
+    width: calc(100% - 250px);
+  }
+
+  .ud-right .ud_for_edd-date {
+    display: none;
+  }
+
+  .ud_for_edd-column {
+    width: 45%;
+  }
+
+}
+
+@media only screen and ( max-width: 780px ) {
+
+  .ud-dashboard-body {
+    padding-left: 0;
+  }
+
+  .ud-navbar {
+    width: 100%;
+  }
+
+  .ud-sidenav-fixed {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .ud_for_edd-column {
+    width: 60%;
+  }
+
+  .ud-right {
+    display: none;
+  }
+
+  .menu-open-icon {
+    display: block;
+  }
+
+}
+
+@media only screen and ( max-width: 520px ) {
+
+  .ud-main {
+    margin: 0 20px;
+    padding-top: 50px;
+  }
+
+  #edd_profile_editor_form p {
+    width: 100%;
+  }
+
+  .ud_for_edd-column {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .ud_for_edd-custom-login-form {
+    padding: 10px;
+  }
+}
